@@ -2,7 +2,7 @@
 
 body {
     font: normal normal 13px/16px "Open Sans", sans-serif;
-    background-image: url("/images/ToDo-BG.png");
+    background-image: url("../images/ToDo-BG.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
