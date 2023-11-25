@@ -2,39 +2,98 @@
 
 body {
     font: normal normal 13px/16px "Open Sans", sans-serif;
-    background: #dfdfdf;
+    background-image: url("/images/ToDo-BG.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.full-container {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    box-sizing: border-box;
 }
 
 .container {
     padding: 20px;
-    width: 300px;
+    width: 500px;
     margin: 0 auto;
-    margin-top: 40px;
-    background: white;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50px 0 50px 0;
+    box-shadow: 0px 0px 30px 10px rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#list {
+    margin-top: 0;
 }
 
 form {
-    display: inline-block;
+    margin-right: 5px;
 }
 
 input {
-    padding: 4px 15px 4px 5px;
+    padding: 4px 15px 4px 10px;
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid grey;
 }
 
 #button {
     display: inline-block;
-    background-color: #fc999b;
+    background-color: #29942f;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 10px 0px 10px 0px;
     text-align: center;
-    margin-top: 2px;
+    margin-right: 15px;
     padding: 5px 15px;
 }
 
 #button:hover {
     cursor: pointer;
-    opacity: .8;
+    opacity: .5;
+}
+
+#button,
+#saveButton {
+    margin-top: 0;
+
+}
+
+#saveButton {
+    background-color: #275ca1;
+    color: #ffffff;
+    border-radius: 10px 0px 10px 0px;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+#saveButton:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-size: 18px;
 }
 
 ol {
@@ -47,7 +106,8 @@ ol li {
 }
 
 ol li:nth-child(even) {
-    background: #dfdfdf;
+    background: #dddddd;
+    border-radius: 1px;
 }
 
 .strike {
@@ -66,6 +126,34 @@ li>crossOutButton {
     background: none;
     border: none;
     float: right;
-    color: #025f70;
+    color: #9c000d;
     font-weight: 800;
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        /* width: 350px; */
+        width: 80%;
+    }
+
+    .top-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    #saveButton {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    #button {
+        margin-top: 10px;
+    }
 }

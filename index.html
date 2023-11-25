@@ -4,24 +4,38 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>To-Do App</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+        <title>To-Do List</title>
     </head>
 
     <body>
-        <div class="container">
-            <h2>To Do List App</h2>
-            <p><em> Double click to mark an item off, click on "X" to delete an item, and drag items to reorder.</em>
-            </p>
 
-            <form name="toDoList">
-                <input type="text" name="ListItem" id="input" />
-            </form>
+        <div class="full-container">
+            <div class="container">
+                <h1 class="main-title">To Do List</h1>
 
-            <div onclick="newItem()" id="button">Add</div>
-            <br />
-            <ol id="list"></ol>
+                <h2>How to use:</h2>
+                <ul>
+                    <li>Double click to mark an item off</li>
+                    <li>Click on "X" to delete an item</li>
+                    <li>Drag items to reorder</li>
+                </ul>
+                <br />
+
+                <div class="top-container">
+                    <form name="toDoList">
+                        <input type="text" name="ListItem" id="input" placeholder="Enter your item" />
+                    </form>
+
+                    <div onclick="newItem()" id="button">Add</div>
+                    <div onclick="saveList()" id="saveButton">Save List</div>
+                </div>
+                <br />
+                <ol id="list"></ol>
+            </div>
         </div>
+
         <script src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
