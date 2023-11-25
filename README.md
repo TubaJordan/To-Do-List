@@ -1,8 +1,20 @@
 # To-Do List App
 
-A minimalistic and intuitive to-do list application to keep track of your tasks.
-
 <img src="https://github.com/TubaJordan/Portfolio/blob/main/images/ToDo-App-Display.png">
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Live Demo](#live-demo)
+- [How To Use](#how-to-use)
+- [Made With](#made-with)
+- [Dependencies](#dependencies)
+- [Project Structure](#project-structure)
+
+## Overview
+
+A minimalistic and intuitive to-do list application to keep track of your tasks.
 
 ## Features
 
@@ -10,6 +22,10 @@ A minimalistic and intuitive to-do list application to keep track of your tasks.
 - **Mark As Done**: Double click on a task to mark it as done or undone.
 - **Delete Tasks**: Remove tasks from the list with a simple click on the "X" button.
 - **Reorder Tasks**: Drag and reorder tasks based on your preference.
+
+## Live Demo
+
+[Click here to see the Live Site](https://tubajordan.github.io/To-Do-List/)
 
 ## How To Use
 
@@ -19,7 +35,7 @@ A minimalistic and intuitive to-do list application to keep track of your tasks.
 4. Click on the "X" button next to a task to remove it from the list.
 5. Drag tasks to reorder them as needed.
 
-## Tech Stack
+## Made With
 
 - HTML
 - CSS
